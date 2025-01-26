@@ -2,7 +2,6 @@
 -- https://github.com/rafi/vim-config
 
 return {
-
 	{
 		'snacks.nvim',
 		opts = {
