@@ -19,7 +19,7 @@ require('lazy').setup({
   --
   -- Use `opts = {}` to force a plugin to be loaded.
   --
-
+  { "LazyVim/LazyVim", import = "lazyvim.plugins" },
 
   -- modular approach: using `require 'path/name'` will
   -- include a plugin definition from file lua/path/name.lua
@@ -63,9 +63,11 @@ require('lazy').setup({
   --    This is the easiest way to modularize your config.
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
-  require 'custom.plugins.ui',
+  require 'custom.plugins.coding',
+  require 'custom.plugins.editor',
+  require 'custom.plugins.git',
   require 'custom.plugins.lualine',
-  { import = 'custom.plugins.git' },
+  require 'custom.plugins.ui',
   --
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!
