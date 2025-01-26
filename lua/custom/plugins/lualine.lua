@@ -1,14 +1,22 @@
--- Plugin: Lualine
--- https://github.com/rafi/vim-config
-
 return {
-
-  -----------------------------------------------------------------------------
-  -- Statusline plugin with many customizations.
-  -- NOTE: This extends
-  -- $XDG_DATA_HOME/nvim/lazy/LazyVim/lua/lazyvim/plugins/ui.lua
-  {
-    'nvim-lualine/lualine.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
-  },
+	{
+		'nvim-lualine/lualine.nvim',
+		dependencies = { 'nvim-tree/nvim-web-devicons' },
+		opts = {
+			options = {
+			  icons_enabled = true,
+			  theme = 'auto',
+			  component_separators = '|',
+			  section_separators = { left = '', right = '' },
+			},
+			sections = {
+				lualine_a = {'mode'},
+				lualine_b = {'branch', 'diff', 'diagnostics'},
+				lualine_c = {'filename'},
+				lualine_x = {'encoding', 'fileformat', 'filetype'},
+				lualine_y = {'progress'},
+				lualine_z = {'location'}
+			},
+		  },
+	}
 }
