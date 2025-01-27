@@ -63,7 +63,7 @@ require('lazy').setup({
   require 'custom.plugins.coding',
   require 'custom.plugins.editor',
   require 'custom.plugins.git',
-  require 'custom.plugins.lualine',
+  -- require 'custom.plugins.lualine',
   require 'custom.plugins.ui',
   --
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
