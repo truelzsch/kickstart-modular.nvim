@@ -124,4 +124,10 @@ return {
       { '<leader>mdr', '<cmd>LinediffReset<CR>', desc = 'Line diff reset' },
     },
   },
+
+  {
+    'mrcjkb/rustaceanvim',
+    version = '^5', -- Recommended
+    lazy = false, -- This plugin is already lazy
+  },
 }
